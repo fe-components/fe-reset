@@ -1,0 +1,14 @@
+{
+  "name": "fe-reset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.css",
+  "scripts": {
+    "dev": "stylus ./src -o ./demo",
+    "build": "stylus ./src -o ./lib",
+    "prepublish": "npm run build && npm version patch -m \"bump %s\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
