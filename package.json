@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/index.css",
   "scripts": {
-    "dev": "stylus ./src -o ./demo",
+    "dev": "stylus -w ./src -o ./demo",
     "build": "stylus ./src -o ./lib",
     "prepublish": "npm run build && npm version patch -m \"bump %s\"",
     "test": "echo \"Error: no test specified\" && exit 1"
