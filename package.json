@@ -1,6 +1,6 @@
 {
   "name": "fe-reset",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "CSS reset implementation in FE stack",
   "main": "index.min.css",
   "files": [
