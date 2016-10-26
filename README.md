@@ -30,3 +30,6 @@ import 'fe-reset/index.css'
   + New font stack
   + a: only render underline when hover
   + Add compression version
+
+- 1.0.8
+  + a: not render underline when hover
