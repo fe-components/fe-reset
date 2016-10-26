@@ -1,14 +1,19 @@
 {
   "name": "fe-reset",
   "version": "1.0.3",
-  "description": "",
-  "main": "lib/index.css",
+  "description": "CSS reset implementation in FE stack",
+  "main": "index.min.css",
+  "files": ["index.min.css", "index.css"],
   "scripts": {
     "dev": "stylus -w ./src -o ./demo",
-    "build": "stylus ./src -o ./lib",
+    "build": "stylus ./src -o ./ && cssnano < index.css > index.min.css",
     "prepublish": "npm run build && npm version patch -m \"bump %s\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "leecade <leecade@163.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano-cli": "^1.0.5",
+    "stylus": "^0.54.5"
+  }
 }
