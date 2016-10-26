@@ -1,9 +1,12 @@
 {
   "name": "fe-reset",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CSS reset implementation in FE stack",
   "main": "index.min.css",
-  "files": ["index.min.css", "index.css"],
+  "files": [
+    "index.min.css",
+    "index.css"
+  ],
   "scripts": {
     "dev": "stylus -w ./src -o ./demo",
     "build": "stylus ./src -o ./ && cssnano < index.css > index.min.css",
